@@ -1,0 +1,16 @@
+<% if @shortLink %>
+    <address>
+      <h2><strong>Your Link</strong></h2><br>
+      <h2>
+        <a href="<%= shortlink_path(@shortLink[:short_name]) %>">
+          <%= (request.port ? request.host_with_port : request.host) + shortlink_path(@shortLink[:short_name]) %>
+        </a>
+      </h2>
+    </address>
+<% end %>
+
+
+
+
+
+  `
